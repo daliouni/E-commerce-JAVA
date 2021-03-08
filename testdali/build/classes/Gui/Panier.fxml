@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background1" stylesheets="@Panier.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.PanierController">
+   <children>
+      <ComboBox fx:id="produitp" layoutX="14.0" layoutY="14.0" onAction="#produitp" prefHeight="26.0" prefWidth="198.0" promptText="Choissez votre produits" />
+      <TextField fx:id="quantitep" layoutX="220.0" layoutY="15.0" prefHeight="25.0" prefWidth="70.0" promptText="Quantite" />
+      <Button fx:id="retourp" layoutX="516.0" layoutY="357.0" mnemonicParsing="false" onAction="#retourp" styleClass="buttonRetour" text="Retour" />
+      <Button fx:id="panierp" layoutX="300.0" layoutY="15.0" mnemonicParsing="false" onAction="#panierp" styleClass="buttonGreen" stylesheets="@Panier.css" text="Panier">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <TableView fx:id="pantab" layoutX="50.0" layoutY="97.0" prefHeight="220.0" prefWidth="482.0">
+        <columns>
+          <TableColumn fx:id="id" minWidth="0.0" prefWidth="0.0" text="id" />
+          <TableColumn fx:id="nomp" prefWidth="225.0" text="nom produit " />
+            <TableColumn fx:id="quantp" prefWidth="256.0" text="quantite" />
+        </columns>
+      </TableView>
+      <Button fx:id="supp" layoutX="290.0" layoutY="333.0" mnemonicParsing="false" onAction="#supprimerpanier" styleClass="buttonSupprimer" text="supprimer" />
+      <Button fx:id="modifier" layoutX="185.0" layoutY="332.0" mnemonicParsing="false" onAction="#modifierpanier" prefHeight="25.0" prefWidth="70.0" styleClass="buttonModifier" text="modifier" />
+      <Button fx:id="passerC" layoutX="372.0" layoutY="16.0" mnemonicParsing="false" onAction="#PasserCommande" styleClass="buttonGreen" text="Passer Commande" />
+      <Label alignment="CENTER" layoutX="219.0" layoutY="60.0" prefHeight="26.0" prefWidth="143.0" styleClass="textTitre" text="Votre panier" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

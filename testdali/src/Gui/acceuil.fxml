@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background1" stylesheets="@Panier.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AcceuilController">
+   <children>
+      <Button fx:id="commandeback" layoutX="376.0" layoutY="109.0" mnemonicParsing="false" onAction="#commandeback" styleClass="buttonSupprimer" text="BACK" />
+      <Button fx:id="retourp" layoutX="480.0" layoutY="320.0" mnemonicParsing="false" onAction="#retourp" styleClass="buttonRetour" text="Retour" />
+      <Button fx:id="voirpanier" layoutX="169.0" layoutY="109.0" mnemonicParsing="false" onAction="#voirpanier" styleClass="buttonGreen" text="FRONT" />
+   </children>
+</AnchorPane>
